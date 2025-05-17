@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arngren- Online Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/image/logo1.png" alt="logo">
+            </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Vehicles</button>
+                    <div class="dropdown-content">
+                      <a href="#bicycle">Bicycle</a>
+                      <a href="#motor">Motor</a>
+                      <a href="#car">Car</a>
+                    </div>
+                  </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#team">Team</a></li>
+                        
+                    </ul>
+                </nav>
+                
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="cart-icon" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <div class="hamburger" id="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">about us</a></li>
+            <li><a href="#" class="mobile-search">Search</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+        
+        </div>
+        <div class="cart-summary">
+            <div class="subtotal">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="shipping">
+                <span>Shipping:</span>
+                <span>Free</span>
+            </div>
+            <div class="total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+            <button class="continue-shopping" id="continue-shopping">Continue Shopping</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 style="text-align:left; font-family: 'black', sans-serif; font-size: 55px; color: black;"><b>PREMIUM BEAST <h2 style="text-align:left; font-family: 'black', sans-serif; font-size: 55px; color: black;"><b>VEHICLE</b></h2>  </b></h1>
+            <p>Freedom of the open road and the confidence of quality,reliability and unbeatable deals,ensuring that every journey you take starts with the perfect ride.</p>
+            <a href="#featured" class="btn btn-primary">Shop Now <i class="fas fa-shopping-bag"></i></a>
+        </div>
+        <div class="hero-image">
+            <img 
+              src="assets/image/sportscar.png" 
+              alt="Luxury Sports Car" 
+              style="width: auto; 
+                     height: 470px; /* Adjust height as needed */
+                     max-width: 100%;
+                     object-fit: contain;"
+            >
+          </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <h2 class="section-title"><b>About Us</b></h2>
+            <p>         Welcome to <b>ARNGREN</b>, your trusted online destination for all things automotive. We are passionate about providing a seamless shopping experience for car, bicycle and motorcycle. Our platforms offers a wide range of products from top brands, ensuring quality, durability, and performance.
+
+                Why choose us?
+                
+                Trusted quality, We source only from reliable manufacturers and suppliers.
+                Convenient ordering, shop anytime, anywhere  with our easy-to-use platform.
+                Fast & Secure Delivery, get your orders delivered safely on time.
+                Customer support, Our team is always ready to assist you with any inquiries.
+                </p>
+            
+        </div>
+    </section>
+
+    <!--bicycle-->
+    
+    <section class="bicycle" id="1">
+        <div class="bicycle" id="bicycle">
+        <div class="container">
+            <h2 class="section-title">Bicycle</h2>
+            <div class="product-grid" id="featured-products">
+        <div class="product-card" data-id="1">
+            <div>
+                <img src="assets/image/bike1.jpg" alt="3-wheel Electric Bike">
+                <h3>3-wheel Electric Bike</h3>
+                <p  style="text-align: justify;">A sleek 250W men's electric bike with smooth shifting, made for city cruising.</p>
+                <div class="product-price">
+                  <span class="current-price">$60,000,000</span>
+              </div>
+           
+                <button class="add-to-cart-btn" data-id="1">
+                    <i class="fas fa-shopping-bag"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card" data-id="2">
+            <div class="product-image">
+                <img src="assets/image/bike2.jpg" alt="Leonx Electronic Bike">
+                <span class="product-badge">Sale</span>
+            </div>
+            <div class="product-details">
+                <div class="product-header">
+                    <div>
+                        <h3 class="product-title">Leonx Electronic Bike</h3>
+                        < <p  style="text-align: justify;">A sturdy electric trike for smooth, worry-free rides around town.</p>
+                        <div class="product-price">
+                            <span class="current-price">$14.000</span>
+                        </div>
+                    </div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" data-id="2">
+                    <i class="fas fa-shopping-bag"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card" data-id="3">
+            <div class="product-image">
+                <img src="assets/image/bike3.jpg" alt="Electric Mens Bike">
+                <h3>Electric Mens Bike</h3>
+                <p  style="text-align: justify;">A powerful 250W men’s e-bike with Shimano gears, urban commuting.</p>
+                <div class="product-price">
+                  <span class="current-price">$60.000</span>
+              </div>
+                
+            </div>
+            <div class="product-details">
+                <div class="product-header">
+                    <>
+                        <h3 class="product-title">Electric Mens Bike</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.4</span>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <span class="current-price">$299.99</span>
+                    
+                </div>
+                <button class="add-to-cart-btn" data-id="3">
+                    <i class="fas fa-shopping-bag"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+        <div class="product-card" data-id="4">
+            <div class="product-image">
+                <img src="assets/image/bike4.jpg" alt="Bianchi Bicycles">
+                <span class="product-badge">Sale</span>
+            </div>
+            <div class="product-details">
+                <div class="product-header">
+                    <div>
+                        <h3 class="product-title">Bianchi Bicycles</h3>
+                        < <p  style="text-align: justify;">Legendary Italian cycles since 1885, famous for Celeste-colored precision-crafted road and e-bikes.</p>
+                        <div class="product-price">
+                            <span class="current-price">$22.000</span>
+                        </div>
+                    </div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" data-id="4">
+                    <i class="fas fa-shopping-bag"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
+    </section>
+  
+
+    
+
+    <!--team section-->
+    <section class="team" id="team">
+        <div class="container">
+          <h2 class="section-title"><b>Team</b></h2>
+          <p>Group-5 BSCS2-2</p>
+          
+          <div class="team-member">
+            <img src="assets/image/jeah.jpg" alt="Jeah Lacra">
+            <h3>Jeah Lacra</h3>
+            <img src="assets/image/Justine.jpg" alt="Justine Agarin">
+            <h3>justine Agarin</h3>
+            <img src="assets/image/Kevin.jpg"  alt="Kevin Gabuyo">
+            <h3>Kevin Gabuyo</h3>
+            <img src="assets/image/glesshele.jpg"  alt="Gleshelle Hagosojos">
+            <h3>Gleshelle Hagosojos</h3>
+
+          </div>
+          
+        </div>
+      </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Product details will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to our newsletter</h2>
+                <p>Get the latest updates on new products and upcoming sales.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-dark">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Bicycle</a></li>
+                        <li><a href="#">Motor</a></li>
+                        <li><a href="#">Car</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ClassicShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
